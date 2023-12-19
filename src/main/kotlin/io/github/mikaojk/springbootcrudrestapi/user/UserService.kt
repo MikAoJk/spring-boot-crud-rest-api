@@ -1,7 +1,5 @@
-package io.github.mikaojk.springbootcrudrestapi.service
+package io.github.mikaojk.springbootcrudrestapi.user
 
-import io.github.mikaojk.springbootcrudrestapi.user.User
-import io.github.mikaojk.springbootcrudrestapi.user.UserRepository
 import org.springframework.stereotype.Service
 
 

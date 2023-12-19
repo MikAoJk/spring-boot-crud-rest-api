@@ -1,7 +1,5 @@
-package io.github.mikaojk.springbootcrudrestapi.api
+package io.github.mikaojk.springbootcrudrestapi.user
 
-import io.github.mikaojk.springbootcrudrestapi.service.UserService
-import io.github.mikaojk.springbootcrudrestapi.user.User
 import org.springframework.web.bind.annotation.*
 
 @RestController
