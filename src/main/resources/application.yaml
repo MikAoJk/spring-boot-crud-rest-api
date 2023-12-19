@@ -7,10 +7,9 @@ spring:
         banner-mode: 'off'
     profiles:
         active: default
+    flyway:
+        enabled: true
     datasource:
         url: "jdbc:postgresql://db:5432/postgres?reWriteBatchedInserts=true"
         username: "postgres"
         password: "postgres"
-    jpa:
-        hibernate:
-            ddl-auto: create
