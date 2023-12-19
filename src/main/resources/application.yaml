@@ -1,0 +1,16 @@
+server:
+    port: 8080
+    shutdown: graceful
+
+spring:
+    main:
+        banner-mode: 'off'
+    profiles:
+        active: default
+    datasource:
+        url: "jdbc:postgresql://db:5432/postgres?reWriteBatchedInserts=true"
+        username: "postgres"
+        password: "postgres"
+    jpa:
+        hibernate:
+            ddl-auto: create
