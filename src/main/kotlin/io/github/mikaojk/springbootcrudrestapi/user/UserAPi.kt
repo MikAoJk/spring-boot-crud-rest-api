@@ -12,9 +12,14 @@ class UserAPiController(private val userService: UserService) {
         return userService.saveUser(user)
     }
 
-    @GetMapping("/users/")
+    @GetMapping("/users")
     fun fetchUserList(): MutableIterable<User> {
         return userService.fetchUserList()
+    }
+
+    @GetMapping("/users/{id}")
+    fun fetchUser(@PathVariable("id") userid: Long): User? {
+        return userService.fetchUser(userid)
     }
 
     @PutMapping("/users/{id}")

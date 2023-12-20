@@ -11,6 +11,6 @@ spring:
         enabled: true
         baseline-on-migrate: true
     datasource:
-        url: "jdbc:postgresql://db:5432/postgres?reWriteBatchedInserts=true"
+        url: "jdbc:postgresql://db:5432/postgres"
         username: "postgres"
         password: "postgres"

@@ -81,7 +81,7 @@ Example of a response:
 
 Request to create a new user
 ```bash script
-curl --location --request POST 'http://localhost:8080/users' \
+curl --location --request POST 'http://localhost:8080/user' \
 --header 'Content-Type: application/json' \
 --data-raw '{"name": "aaa","email": "aaa@mail"}'
 ```
