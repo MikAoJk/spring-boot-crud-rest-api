@@ -1,4 +1,5 @@
 val javaVersion = JavaVersion.VERSION_21
+val testContainersVersion = "1.19.3"
 
 plugins {
     id("org.springframework.boot") version "3.2.0"
@@ -28,6 +29,7 @@ dependencies {
 
     runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.testcontainers:postgresql:$testContainersVersion")
 }
 
 tasks {

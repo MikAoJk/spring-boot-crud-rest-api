@@ -17,7 +17,7 @@ class UserAPiController(private val userService: UserService) {
         return userService.fetchUserList()
     }
 
-    @PutMapping("/user/{id}")
+    @PutMapping("/users/{id}")
     fun updateUser(
         @RequestBody user: User,
         @PathVariable("id") userid: Long
@@ -27,7 +27,7 @@ class UserAPiController(private val userService: UserService) {
         )
     }
 
-    @DeleteMapping("/user/{id}")
+    @DeleteMapping("/users/{id}")
     fun deleteUserById(@PathVariable("id") userid: Long): String {
         userService.deleteUserById(
             userid

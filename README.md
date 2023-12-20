@@ -21,7 +21,6 @@ Make sure you have curl installed using this command:
 curl --version
 ```
 
-
 ### Build code
 Build the code without running it
 ``` bash
