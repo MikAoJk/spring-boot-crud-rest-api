@@ -54,6 +54,11 @@ docker compose build
 docker compose up springbootapp
 ```
 
+or run all the commands with the convenience script
+```bash
+./run_development.sh
+```
+
 ##### 🧪 Test the applications endpoints
 
 Request to get the all the users:
