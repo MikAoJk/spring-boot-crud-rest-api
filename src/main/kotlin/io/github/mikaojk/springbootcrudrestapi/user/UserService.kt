@@ -22,5 +22,4 @@ class UserService(private val userRepository: UserRepository) {
     fun deleteUserById(userId: Long) {
         userRepository.deleteById(userId)
     }
-
 }
