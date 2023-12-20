@@ -11,7 +11,7 @@ import jakarta.persistence.Table
 @Table(name = "user")
 class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0
     var name: String? = null
     var email: String? = null

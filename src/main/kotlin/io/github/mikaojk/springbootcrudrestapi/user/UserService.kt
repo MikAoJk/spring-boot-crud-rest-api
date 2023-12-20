@@ -14,6 +14,10 @@ class UserService(private val userRepository: UserRepository) {
         return userRepository.findAll()
     }
 
+    fun fetchUser(id: Long) : User? {
+        return userRepository.findById(id).orElse(null)
+    }
+
     fun updateUser(user: User, userId: Long): User {
         val userDB: User = userRepository.findById(userId).get()
         return userDB
