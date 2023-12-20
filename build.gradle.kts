@@ -11,9 +11,6 @@ plugins {
 group = "io.github.MikAoJk"
 version = "0.0.1-SNAPSHOT"
 
-java {
-    sourceCompatibility = javaVersion
-}
 
 repositories {
     mavenCentral()
