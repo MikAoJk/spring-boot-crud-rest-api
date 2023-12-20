@@ -29,13 +29,14 @@ dependencies {
     implementation("org.flywaydb:flyway-core")
     runtimeOnly("org.postgresql:postgresql")
 
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.testcontainers:postgresql:$testContainersVersion")
 }
 
 tasks {
 
-    getByName<Jar>("jar") {
+    jar {
         enabled = false
     }
 
