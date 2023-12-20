@@ -3,5 +3,10 @@ spring:
     active: test
   flyway:
     enabled: true
+    baseline-on-migrate: true
+  datasource:
+    hikari:
+      minimum-idle: 1
+      maximum-pool-size: 3
   main:
     allow-bean-definition-overriding: true
