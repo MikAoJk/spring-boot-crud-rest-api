@@ -1,7 +1,7 @@
 # spring-boot-crud-rest-api
 
 ### Prerequisites
-Make sure you have the rust installed using this command:
+Make sure you have the java installed using this command:
 
 #### Java
 Make sure you have java installed using this command:
@@ -33,7 +33,7 @@ gradlew.bat bootJar
 
 #### Running the application locally
 
-#####  Create docker image of app
+##### Create docker image of app
 Creating a docker image should be as simple as
 ``` bash
 docker build -t springbootapp .
