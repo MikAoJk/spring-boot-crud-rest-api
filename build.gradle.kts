@@ -4,7 +4,7 @@ val testContainersVersion = "1.19.3"
 plugins {
     id("org.springframework.boot") version "3.2.3"
     id("io.spring.dependency-management") version "1.1.4"
-    kotlin("jvm") version "1.9.20"
+    kotlin("jvm") version "1.9.22"
     kotlin("plugin.spring") version "1.9.20"
 }
 
