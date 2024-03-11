@@ -1,5 +1,5 @@
 val javaVersion = JavaVersion.VERSION_21
-val testContainersVersion = "1.19.6"
+val testContainersVersion = "1.19.7"
 
 plugins {
     id("org.springframework.boot") version "3.2.3"
