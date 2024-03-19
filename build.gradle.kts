@@ -1,5 +1,6 @@
 val javaVersion = JavaVersion.VERSION_21
 val testContainersVersion = "1.19.7"
+val commonsCompressVersion = "1.26.1"
 
 plugins {
     id("org.springframework.boot") version "3.2.3"
@@ -29,6 +30,11 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.testcontainers:postgresql:$testContainersVersion")
+    constraints {
+        implementation("org.apache.commons:commons-compress:$commonsCompressVersion") {
+            because("override transient from org.testcontainers:postgresql")
+        }
+    }
 }
 
 tasks {
