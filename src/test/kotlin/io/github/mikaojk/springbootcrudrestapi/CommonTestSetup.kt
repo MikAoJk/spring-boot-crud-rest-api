@@ -3,7 +3,6 @@ package io.github.mikaojk.springbootcrudrestapi
 import io.github.mikaojk.springbootcrudrestapi.user.UserRepository
 import org.junit.jupiter.api.TestInstance
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.boot.test.autoconfigure.actuate.observability.AutoConfigureObservability
 import org.springframework.boot.test.context.SpringBootTest
 import org.testcontainers.containers.PostgreSQLContainer
 import kotlin.concurrent.thread
@@ -11,7 +10,6 @@ import kotlin.concurrent.thread
 private class PostgreSQLContainer14 : PostgreSQLContainer<PostgreSQLContainer14>("postgres:14-alpine")
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-@AutoConfigureObservability
 @SpringBootTest(classes = [SpringBootCrudRestApiApplication::class])
 abstract class CommonTestSetup {
 
