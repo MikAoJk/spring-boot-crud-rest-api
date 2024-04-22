@@ -3,7 +3,7 @@ val testContainersVersion = "1.19.7"
 val commonsCompressVersion = "1.26.1"
 
 plugins {
-    id("org.springframework.boot") version "3.2.4"
+    id("org.springframework.boot") version "3.2.5"
     id("io.spring.dependency-management") version "1.1.4"
     kotlin("jvm") version "1.9.23"
     kotlin("plugin.spring") version "1.9.23"
