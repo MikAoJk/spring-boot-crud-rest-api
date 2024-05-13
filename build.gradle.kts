@@ -1,5 +1,5 @@
 val javaVersion = JavaVersion.VERSION_21
-val testContainersVersion = "1.19.7"
+val testContainersVersion = "1.19.8"
 val commonsCompressVersion = "1.26.1"
 
 plugins {
