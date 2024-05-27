@@ -1,6 +1,6 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
-val javaVersion = JavaVersion.VERSION_21
+val javaVersion = JvmTarget.JVM_21
 val testContainersVersion = "1.19.8"
 val commonsCompressVersion = "1.26.2"
 
