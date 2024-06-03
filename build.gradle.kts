@@ -1,14 +1,12 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-
-val javaVersion = JvmTarget.JVM_21
+val javaVersion = JavaVersion.VERSION_21
 val testContainersVersion = "1.19.8"
 val commonsCompressVersion = "1.26.2"
 
 plugins {
     id("org.springframework.boot") version "3.2.5"
     id("io.spring.dependency-management") version "1.1.5"
-    kotlin("jvm") version "2.0.0"
-    kotlin("plugin.spring") version "2.0.0"
+    kotlin("jvm") version "1.9.24"
+    kotlin("plugin.spring") version "1.9.24"
 }
 
 group = "io.github.MikAoJk"
@@ -39,13 +37,14 @@ dependencies {
     }
 }
 
-kotlin {
-    compilerOptions {
-        jvmTarget = javaVersion
-    }
-}
-
 tasks {
+
+    compileKotlin {
+        kotlinOptions.jvmTarget = javaVersion.toString()
+    }
+    compileTestKotlin {
+        kotlinOptions.jvmTarget = javaVersion.toString()
+    }
 
     jar {
         enabled = false
