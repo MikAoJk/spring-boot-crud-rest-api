@@ -8,6 +8,7 @@ import org.testcontainers.containers.PostgreSQLContainer
 import kotlin.concurrent.thread
 
 @Container
+@ServiceConnection
 private class PostgreSQLContainer14 : PostgreSQLContainer<PostgreSQLContainer14>("postgres:14-alpine")
 
 @Testcontainers
