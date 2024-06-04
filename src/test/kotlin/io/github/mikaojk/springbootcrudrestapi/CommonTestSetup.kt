@@ -1,17 +1,12 @@
 package io.github.mikaojk.springbootcrudrestapi
 
 import io.github.mikaojk.springbootcrudrestapi.user.UserRepository
-import org.junit.jupiter.api.TestInstance
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.testcontainers.containers.PostgreSQLContainer
-import org.testcontainers.junit.jupiter.Container
 import org.testcontainers.junit.jupiter.Testcontainers
-import org.springframework.boot.testcontainers.service.connection.ServiceConnection
 import kotlin.concurrent.thread
 
-@Container
-@ServiceConnection
 private class PostgreSQLContainer14 : PostgreSQLContainer<PostgreSQLContainer14>("postgres:14-alpine")
 
 @Testcontainers
