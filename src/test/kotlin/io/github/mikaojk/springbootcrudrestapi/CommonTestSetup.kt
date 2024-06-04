@@ -7,9 +7,10 @@ import org.springframework.boot.test.context.SpringBootTest
 import org.testcontainers.containers.PostgreSQLContainer
 import kotlin.concurrent.thread
 
+@Container
 private class PostgreSQLContainer14 : PostgreSQLContainer<PostgreSQLContainer14>("postgres:14-alpine")
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@Testcontainers
 @SpringBootTest(classes = [SpringBootCrudRestApiApplication::class])
 abstract class CommonTestSetup {
 
