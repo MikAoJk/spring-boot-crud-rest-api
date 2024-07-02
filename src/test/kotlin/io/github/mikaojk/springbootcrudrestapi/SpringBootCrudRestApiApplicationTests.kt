@@ -15,7 +15,7 @@ class SpringBootCrudRestApiApplicationTests {
     lateinit var userRepository: UserRepository
 
     @Container
-    var postgresql: PostgreSQLContainer<*> = PostgreSQLContainer("postgres:14-alpine").apply {
+    var postgresql: PostgreSQLContainer<*> = PostgreSQLContainer("postgres:16-alpine").apply {
                     withCommand("postgres", "-c", "wal_level=logical")
                     start()
                     System.setProperty("spring.datasource.url", "$jdbcUrl&reWriteBatchedInserts=true")
