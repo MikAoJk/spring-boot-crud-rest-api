@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 val javaVersion = JvmTarget.JVM_21
-val testContainersVersion = "1.20.0"
+val testContainersVersion = "1.20.1"
 val commonsCompressVersion = "1.26.2"
 
 plugins {
