@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 val javaVersion = JvmTarget.JVM_21
 val testContainersVersion = "1.20.1"
-val commonsCompressVersion = "1.26.2"
+val commonsCompressVersion = "1.27.0"
 
 plugins {
     id("org.springframework.boot") version "3.3.2"
