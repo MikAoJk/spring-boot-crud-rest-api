@@ -44,7 +44,7 @@ docker build -t springbootapp .
 docker-compose up -d db
 ```
 
-##### 🏗️ Build the Rust app image
+##### 🏗️ Build the springboot app image
 ```bash script
 docker compose build
 ```
