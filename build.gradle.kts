@@ -1,18 +1,17 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 val javaVersion = JvmTarget.JVM_21
-val testContainersVersion = "1.20.1"
-val commonsCompressVersion = "1.27.0"
+val testContainersVersion = "1.20.2"
 
 plugins {
-    id("org.springframework.boot") version "3.3.2"
+    id("org.springframework.boot") version "3.3.4"
     id("io.spring.dependency-management") version "1.1.6"
-    kotlin("jvm") version "2.0.10"
-    kotlin("plugin.spring") version "2.0.10"
+    kotlin("jvm") version "2.0.20"
+    kotlin("plugin.spring") version "2.0.20"
 }
 
-group = "io.github.MikAoJk"
-version = "0.0.1-SNAPSHOT"
+group = "io.github.mikaojk"
+version = "1.0.0"
 
 
 repositories {
@@ -36,11 +35,6 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
     testImplementation("org.testcontainers:junit-jupiter:$testContainersVersion")
     testImplementation("org.testcontainers:postgresql:$testContainersVersion")
-    constraints {
-        implementation("org.apache.commons:commons-compress:$commonsCompressVersion") {
-            because("override transient from org.testcontainers:postgresql")
-        }
-    }
 }
 
 kotlin {
