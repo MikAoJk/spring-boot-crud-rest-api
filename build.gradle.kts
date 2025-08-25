@@ -1,6 +1,10 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
+group = "io.github.mikaojk"
+version = "1.0.0"
+
 val javaVersion = JvmTarget.JVM_21
+
 val testContainersVersion = "1.20.2"
 
 plugins {
@@ -9,9 +13,6 @@ plugins {
     kotlin("jvm") version "2.0.20"
     kotlin("plugin.spring") version "2.0.20"
 }
-
-group = "io.github.mikaojk"
-version = "1.0.0"
 
 
 repositories {
